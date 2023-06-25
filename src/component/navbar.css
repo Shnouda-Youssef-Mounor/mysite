@@ -1,0 +1,16 @@
+.custom-toggler.navbar-toggler {
+    border-color: crimson;
+}
+
+.navbar-toggler {
+    background-color: crimson;
+    border-radius: 20%;
+}
+
+.bg-dark {
+    background-color: rgb(17, 17, 17);
+}
+
+.show {
+    margin-left: auto;
+}

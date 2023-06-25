@@ -1,0 +1,1352 @@
+@media only screen and (max-width:400px) {
+    body {
+        scroll-behavior: smooth;
+        scroll-snap-type: proximity;
+        height: auto;
+        background-color: rgb(212, 212, 212);
+    }
+    /* width */
+     ::-webkit-scrollbar {
+        width: 20px;
+        background-color: rgb(51, 51, 51);
+        border-radius: 20px;
+    }
+    /* Track */
+     ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px rgb(51, 51, 51);
+        border-radius: 20px;
+    }
+    /* Handle */
+     ::-webkit-scrollbar-thumb {
+        background: crimson;
+        border-radius: 10px;
+    }
+    /* Handle on hover */
+     ::-webkit-scrollbar-thumb:hover {
+        background: crimson;
+    }
+    .line {
+        margin-top: -15px;
+        border-radius: 20px;
+        height: 3px;
+        width: 100px;
+        background-color: crimson;
+        display: none;
+    }
+    .list {
+        display: none;
+    }
+    ul:hover .list {
+        display: block;
+    }
+    ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        text-align: start;
+        padding: 0;
+    }
+    li {
+        cursor: pointer;
+        width: auto;
+    }
+    h3 {
+        padding: 0;
+        margin: 0;
+        margin-top: 3px;
+        margin-left: 5%;
+        font-size: large;
+        font-weight: 900;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: oblique;
+        color: crimson;
+    }
+    h3::content {
+        border: 1px;
+        border-style: solid;
+        border-bottom-color: crimson;
+    }
+    h3::selection {
+        color: crimson;
+        background-color: black;
+    }
+    h3:hover ul {
+        display: block;
+    }
+    .wel::selection {
+        color: rgb(17, 17, 17);
+        background-color: crimson;
+    }
+    .myblog::selection,
+    .welcome::selection {
+        color: crimson;
+        background-color: rgb(17, 17, 17);
+    }
+    .welcome {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .wel {
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 8px;
+        margin-bottom: 20px;
+        position: relative;
+        color: crimson;
+        text-shadow: 2px 2px white;
+    }
+    .wel,
+    .myblog {
+        text-transform: uppercase;
+        animation: text 3s 1;
+        letter-spacing: 2px;
+    }
+    .myblog {
+        background-color: crimson;
+        color: white;
+        font-weight: 700;
+        padding: 2px;
+        display: block;
+    }
+    @keyframes text {
+        0% {
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        50% {
+            letter-spacing: 4px;
+            margin-bottom: 30px;
+        }
+        100% {
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+    }
+    .page1 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 10%;
+        display: grid;
+        grid-template-columns: auto;
+        width: 200px;
+        display: none;
+    }
+    .myPhoto {
+        width: 200px;
+        border-radius: 30px;
+        animation: movephoto 3s 1;
+        border: 1px;
+        border-style: solid;
+        border-left-color: crimson;
+        border-bottom-color: crimson;
+        border-right-color: crimson;
+        border-top-color: crimson;
+    }
+    @keyframes movephoto {
+        0% {
+            margin-top: 0;
+            border: 1px;
+            border-style: solid;
+            border-left-color: crimson;
+            border-bottom-color: crimson;
+        }
+        50% {
+            margin-top: 3%;
+            border-style: solid;
+            border-right-color: crimson;
+            border-top-color: crimson;
+        }
+        100% {
+            margin-top: 5%;
+            border: 1px;
+            border-style: solid;
+            border-left-color: crimson;
+            border-bottom-color: crimson;
+        }
+    }
+    .info {
+        width: 200px;
+        margin-top: 10px;
+        color: crimson;
+        text-align: start;
+        font-size: large;
+        font-weight: bold;
+        font-family: cursive;
+        text-align: center;
+        text-decoration-color: crimson;
+        animation: move 3s 1;
+    }
+    @keyframes move {
+        0% {
+            margin-top: 2px;
+        }
+        50% {
+            margin-top: 7px;
+        }
+        100% {
+            margin-top: 10px;
+        }
+    }
+    .info::selection {
+        color: rgb(17, 17, 17);
+        background-color: crimson;
+    }
+    .page2 {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: auto;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+    }
+    .partTop {
+        display: grid;
+        grid-template-columns: auto auto;
+        height: auto;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .photo {
+        width: 100px;
+        border-radius: 20px;
+        animation: changebord 1s infinite cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    }
+    @keyframes changebord {
+        0% {
+            border: 1px;
+            border-style: solid;
+            border-left-color: crimson;
+            border-bottom-color: crimson;
+        }
+        50% {
+            border: 1px;
+            border-style: solid;
+            border-right-color: crimson;
+            border-top-color: crimson;
+        }
+        100% {
+            border: 1px;
+            border-style: solid;
+            border-left-color: crimson;
+            border-bottom-color: crimson;
+        }
+    }
+    .data {
+        font-size: medium;
+        font-family: cursive;
+        font-style: oblique;
+        color: crimson;
+        font-weight: bold;
+        text-align: center;
+        margin-left: 5px;
+        margin-top: 27%;
+    }
+    .partbottom {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: auto;
+        width: auto;
+        height: auto;
+    }
+    .htm {
+        margin: 15px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .htm1 {
+        width: auto;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .htm2 {
+        display: grid;
+        grid-template-rows: auto auto;
+        width: 100px;
+    }
+    .back {
+        border-radius: 20%;
+        height: 11px;
+    }
+    .htmlfont {
+        font-size: medium;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        font-style: oblique;
+        color: crimson;
+    }
+    .htmlline {
+        margin-top: 4px;
+        width: 90%;
+        height: 4px;
+        animation: linemove 3s 1;
+        background-color: crimson;
+        border: 2px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: black;
+    }
+    @keyframes linemove {
+        0% {
+            width: 20%;
+        }
+        50% {
+            width: 50%;
+        }
+        100% {
+            width: 90%;
+        }
+    }
+    .cs {
+        margin: 15px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .cs1 {
+        width: auto;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cs2 {
+        display: grid;
+        grid-template-rows: auto auto;
+        width: 100px;
+    }
+    .csfont {
+        font-size: medium;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        font-style: oblique;
+        color: crimson;
+    }
+    .csline {
+        margin-top: 4px;
+        width: 95%;
+        height: 4px;
+        animation: linemovecss 3s 1;
+        background-color: crimson;
+        border: 2px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: black;
+    }
+    @keyframes linemovecss {
+        0% {
+            width: 20%;
+        }
+        50% {
+            width: 50%;
+        }
+        100% {
+            width: 95%;
+        }
+    }
+    .js {
+        margin: 15px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .js1 {
+        width: auto;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .js2 {
+        display: grid;
+        grid-template-rows: auto auto;
+        width: 100px;
+    }
+    .jsfont {
+        font-size: medium;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        font-style: oblique;
+        color: crimson;
+    }
+    .jsline {
+        margin-top: 4px;
+        width: 75%;
+        height: 4px;
+        animation: linemovejs 3s 1;
+        background-color: crimson;
+        border: 2px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: black;
+    }
+    @keyframes linemovejs {
+        0% {
+            width: 20%;
+        }
+        50% {
+            width: 50%;
+        }
+        100% {
+            width: 75%;
+        }
+    }
+    .a {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        background-color: crimson;
+        width: auto;
+        height: 40px;
+        text-decoration: none;
+        padding: 3px;
+        border-radius: 50px;
+    }
+    .tele {
+        color: rgb(212, 212, 212);
+        font-size: large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 700;
+    }
+    a:active,
+    a:focus,
+    a:hover,
+    a::content {
+        border-color: black;
+        color: black;
+        background-color: black;
+    }
+    .page3 {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 50px;
+        width: 250px;
+        display: grid;
+    }
+    .photome {
+        margin-left: auto;
+        margin-right: auto;
+        height: 200px;
+        border-radius: 20px;
+        animation: changebord 1s infinite cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    }
+    .tools {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .icon {
+        border-radius: 100px;
+        height: 40px;
+        animation: changebord 1s infinite cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    }
+}
+
+@media only screen and (min-width:400px) {
+    body {
+        scroll-behavior: smooth;
+        scroll-snap-type: proximity;
+        height: auto;
+        background-color: rgb(212, 212, 212);
+    }
+    /* width */
+     ::-webkit-scrollbar {
+        width: 20px;
+        background-color: rgb(51, 51, 51);
+        border-radius: 20px;
+    }
+    /* Track */
+     ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px rgb(51, 51, 51);
+        border-radius: 20px;
+    }
+    /* Handle */
+     ::-webkit-scrollbar-thumb {
+        background: crimson;
+        border-radius: 10px;
+    }
+    /* Handle on hover */
+     ::-webkit-scrollbar-thumb:hover {
+        background: crimson;
+    }
+    .line {
+        margin-top: -15px;
+        border-radius: 20px;
+        height: 3px;
+        width: 100px;
+        background-color: crimson;
+        display: none;
+    }
+    .list {
+        display: none;
+    }
+    ul:hover .list {
+        display: block;
+    }
+    ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        text-align: start;
+        padding: 0;
+    }
+    li {
+        cursor: pointer;
+        width: auto;
+    }
+    h3 {
+        padding: 0;
+        margin: 0;
+        margin-top: 3px;
+        margin-left: 5%;
+        font-size: large;
+        font-weight: 900;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: oblique;
+        color: crimson;
+    }
+    h3::content {
+        border: 1px;
+        border-style: solid;
+        border-bottom-color: crimson;
+    }
+    h3::selection {
+        color: crimson;
+        background-color: black;
+    }
+    h3:hover ul {
+        display: block;
+    }
+    .wel::selection {
+        color: rgb(17, 17, 17);
+        background-color: crimson;
+    }
+    .myblog::selection,
+    .welcome::selection {
+        color: crimson;
+        background-color: rgb(17, 17, 17);
+    }
+    .welcome {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .wel {
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 8px;
+        margin-bottom: 20px;
+        position: relative;
+        color: crimson;
+        text-shadow: 2px 2px white;
+    }
+    .wel,
+    .myblog {
+        text-transform: uppercase;
+        animation: text 3s 1;
+        letter-spacing: 2px;
+    }
+    .myblog {
+        background-color: crimson;
+        color: white;
+        font-weight: 700;
+        padding: 2px;
+        display: block;
+    }
+    @keyframes text {
+        0% {
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        50% {
+            letter-spacing: 4px;
+            margin-bottom: 30px;
+        }
+        100% {
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+    }
+    .page1 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 10%;
+        display: grid;
+        grid-template-columns: auto;
+        width: 200px;
+        display: none;
+    }
+    .myPhoto {
+        width: 200px;
+        border-radius: 30px;
+        animation: movephoto 3s 1;
+        border: 1px;
+        border-style: solid;
+        border-left-color: crimson;
+        border-bottom-color: crimson;
+        border-right-color: crimson;
+        border-top-color: crimson;
+    }
+    @keyframes movephoto {
+        0% {
+            margin-top: 0;
+            border: 1px;
+            border-style: solid;
+            border-left-color: crimson;
+            border-bottom-color: crimson;
+        }
+        50% {
+            margin-top: 3%;
+            border-style: solid;
+            border-right-color: crimson;
+            border-top-color: crimson;
+        }
+        100% {
+            margin-top: 5%;
+            border: 1px;
+            border-style: solid;
+            border-left-color: crimson;
+            border-bottom-color: crimson;
+        }
+    }
+    .info {
+        width: 200px;
+        margin-top: 10px;
+        color: crimson;
+        text-align: start;
+        font-size: large;
+        font-weight: bold;
+        font-family: cursive;
+        text-align: center;
+        text-decoration-color: crimson;
+        animation: move 3s 1;
+    }
+    @keyframes move {
+        0% {
+            margin-top: 2px;
+        }
+        50% {
+            margin-top: 7px;
+        }
+        100% {
+            margin-top: 10px;
+        }
+    }
+    .info::selection {
+        color: rgb(17, 17, 17);
+        background-color: crimson;
+    }
+    .page2 {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: auto;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+    }
+    .partTop {
+        display: grid;
+        grid-template-columns: auto auto;
+        height: auto;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .photo {
+        width: 100px;
+        border-radius: 20px;
+        animation: changebord 1s infinite cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    }
+    @keyframes changebord {
+        0% {
+            border: 1px;
+            border-style: solid;
+            border-left-color: crimson;
+            border-bottom-color: crimson;
+        }
+        50% {
+            border: 1px;
+            border-style: solid;
+            border-right-color: crimson;
+            border-top-color: crimson;
+        }
+        100% {
+            border: 1px;
+            border-style: solid;
+            border-left-color: crimson;
+            border-bottom-color: crimson;
+        }
+    }
+    .data {
+        font-size: x-large;
+        font-family: cursive;
+        font-style: oblique;
+        color: crimson;
+        font-weight: bold;
+        text-align: center;
+        margin-left: 5px;
+        margin-top: 27%;
+    }
+    .partbottom {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: auto;
+        width: auto;
+        height: auto;
+    }
+    .htm {
+        margin: 15px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .htm1 {
+        width: auto;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .htm2 {
+        display: grid;
+        grid-template-rows: auto auto;
+        width: 100px;
+    }
+    .back {
+        border-radius: 20%;
+        height: 11px;
+    }
+    .htmlfont {
+        font-size: medium;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        font-style: oblique;
+        color: crimson;
+    }
+    .htmlline {
+        margin-top: 4px;
+        width: 90%;
+        height: 4px;
+        animation: linemove 3s 1;
+        background-color: crimson;
+        border: 2px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: black;
+    }
+    @keyframes linemove {
+        0% {
+            width: 20%;
+        }
+        50% {
+            width: 50%;
+        }
+        100% {
+            width: 90%;
+        }
+    }
+    .cs {
+        margin: 15px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .cs1 {
+        width: auto;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cs2 {
+        display: grid;
+        grid-template-rows: auto auto;
+        width: 100px;
+    }
+    .csfont {
+        font-size: medium;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        font-style: oblique;
+        color: crimson;
+    }
+    .csline {
+        margin-top: 4px;
+        width: 95%;
+        height: 4px;
+        animation: linemovecss 3s 1;
+        background-color: crimson;
+        border: 2px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: black;
+    }
+    @keyframes linemovecss {
+        0% {
+            width: 20%;
+        }
+        50% {
+            width: 50%;
+        }
+        100% {
+            width: 95%;
+        }
+    }
+    .js {
+        margin: 15px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .js1 {
+        width: auto;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .js2 {
+        display: grid;
+        grid-template-rows: auto auto;
+        width: 100px;
+    }
+    .jsfont {
+        font-size: medium;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        font-style: oblique;
+        color: crimson;
+    }
+    .jsline {
+        margin-top: 4px;
+        width: 75%;
+        height: 4px;
+        animation: linemovejs 3s 1;
+        background-color: crimson;
+        border: 2px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: black;
+    }
+    @keyframes linemovejs {
+        0% {
+            width: 20%;
+        }
+        50% {
+            width: 50%;
+        }
+        100% {
+            width: 75%;
+        }
+    }
+    .a {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        background-color: crimson;
+        width: auto;
+        height: 40px;
+        text-decoration: none;
+        padding: 3px;
+        border-radius: 50px;
+    }
+    .tele {
+        color: rgb(212, 212, 212);
+        font-size: large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 700;
+    }
+    a:active,
+    a:focus,
+    a:hover,
+    a::content {
+        border-color: black;
+        color: black;
+        background-color: black;
+    }
+    .page3 {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 50px;
+        width: 250px;
+        display: grid;
+    }
+    .photome {
+        margin-left: auto;
+        margin-right: auto;
+        height: 200px;
+        border-radius: 20px;
+        animation: changebord 1s infinite cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    }
+    .tools {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .icon {
+        border-radius: 100px;
+        height: 40px;
+        animation: changebord 1s infinite cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    }
+}
+
+@media only screen and (min-width:992px) {
+    body {
+        scroll-behavior: smooth;
+        scroll-snap-type: proximity;
+        height: auto;
+        background-color: rgb(17, 17, 17);
+    }
+    /* width */
+     ::-webkit-scrollbar {
+        width: 20px;
+        background-color: rgb(51, 51, 51);
+        border-radius: 20px;
+    }
+    /* Track */
+     ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px rgb(51, 51, 51);
+        border-radius: 20px;
+    }
+    /* Handle */
+     ::-webkit-scrollbar-thumb {
+        background: crimson;
+        border-radius: 10px;
+    }
+    /* Handle on hover */
+     ::-webkit-scrollbar-thumb:hover {
+        background: darkred;
+    }
+    .line {
+        margin-top: -15px;
+        border-radius: 20px;
+        height: 3px;
+        width: 100px;
+        background-color: crimson;
+        display: none;
+    }
+    .list {
+        display: contents;
+    }
+    ul:hover .list {
+        display: contents;
+    }
+    ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        text-align: center;
+    }
+    li {
+        cursor: pointer;
+        width: auto;
+    }
+    h3 {
+        padding: 0;
+        margin: 0;
+        font-size: large;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: oblique;
+        color: crimson;
+    }
+    h3::content {
+        border: 1px;
+        border-style: solid;
+        border-bottom-color: crimson;
+    }
+    h3::selection {
+        color: crimson;
+        background-color: black;
+    }
+    .wel::selection {
+        color: rgb(17, 17, 17);
+        background-color: crimson;
+    }
+    .myblog::selection,
+    .welcome::selection {
+        color: crimson;
+        background-color: rgb(17, 17, 17);
+    }
+    .welcome {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .wel {
+        font-size: 60px;
+        font-weight: 700;
+        letter-spacing: 8px;
+        margin-bottom: 20px;
+        position: relative;
+        color: crimson;
+    }
+    .wel,
+    .myblog {
+        text-transform: uppercase;
+        animation: text 3s 1;
+        letter-spacing: 8px;
+    }
+    .myblog {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: crimson;
+        color: rgb(17, 17, 17);
+        font-weight: 700;
+        padding: 3px;
+        width: 133px;
+        animation: text 3s 1;
+    }
+    @keyframes text {
+        0% {
+            letter-spacing: 8px;
+            margin-bottom: 20px;
+            width: 133px;
+        }
+        50% {
+            letter-spacing: 15px;
+            margin-bottom: 30px;
+            width: 183px;
+        }
+        100% {
+            letter-spacing: 8px;
+            margin-bottom: 20px;
+            width: 133px;
+        }
+    }
+    .page1 {
+        margin-right: 30%;
+        margin-left: 30%;
+        margin-top: 10%;
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 500px;
+        display: none;
+    }
+    .myPhoto {
+        width: 200px;
+        border-radius: 30px;
+        animation: movephoto 3s 1;
+        border: 1px;
+        border-style: solid;
+        border-left-color: crimson;
+        border-bottom-color: crimson;
+        border-right-color: crimson;
+        border-top-color: crimson;
+    }
+    @keyframes movephoto {
+        0% {
+            margin-left: -30px;
+            border: 1px;
+            border-style: solid;
+            border-left-color: crimson;
+            border-bottom-color: crimson;
+        }
+        50% {
+            margin-left: -15px;
+            border-style: solid;
+            border-right-color: crimson;
+            border-top-color: crimson;
+        }
+        100% {
+            margin-left: 0px;
+            border: 1px;
+            border-style: solid;
+            border-left-color: crimson;
+            border-bottom-color: crimson;
+        }
+    }
+    .info {
+        margin-top: 25%;
+        color: crimson;
+        text-align: start;
+        font-size: larger;
+        font-weight: bold;
+        font-family: cursive;
+        text-align: center;
+        text-decoration-color: brown;
+        animation: move 3s 1;
+    }
+    @keyframes move {
+        0% {
+            margin-top: 10%;
+        }
+        50% {
+            margin-top: 20%;
+        }
+        100% {
+            margin-top: 25%;
+        }
+    }
+    .info::selection {
+        color: rgb(17, 17, 17);
+        background-color: crimson;
+    }
+    .page2 {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: auto;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+    }
+    .partTop {
+        display: grid;
+        grid-template-columns: auto auto;
+        height: auto;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .photo {
+        width: 100px;
+        border-radius: 20px;
+        animation: changebord 1s infinite cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    }
+    @keyframes changebord {
+        0% {
+            border: 1px;
+            border-style: solid;
+            border-left-color: crimson;
+            border-bottom-color: crimson;
+        }
+        50% {
+            border: 1px;
+            border-style: solid;
+            border-right-color: crimson;
+            border-top-color: crimson;
+        }
+        100% {
+            border: 1px;
+            border-style: solid;
+            border-left-color: crimson;
+            border-bottom-color: crimson;
+        }
+    }
+    .data {
+        font-size: x-large;
+        font-family: cursive;
+        font-style: oblique;
+        color: crimson;
+        font-weight: 500;
+        text-align: center;
+        margin-left: 5px;
+        margin-top: 27%;
+    }
+    .partbottom {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: auto;
+        height: auto;
+    }
+    .htm {
+        margin: 15px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .htm1 {
+        width: auto;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .htm2 {
+        display: grid;
+        grid-template-rows: auto auto;
+        width: 100px;
+    }
+    .back {
+        border-radius: 20%;
+        height: 11px;
+    }
+    .htmlfont {
+        font-size: medium;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        font-style: oblique;
+        color: crimson;
+    }
+    .htmlline {
+        margin-top: 4px;
+        width: 90%;
+        height: 4px;
+        animation: linemove 3s 1;
+        background-color: crimson;
+        border: 2px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: black;
+    }
+    @keyframes linemove {
+        0% {
+            width: 20%;
+        }
+        50% {
+            width: 50%;
+        }
+        100% {
+            width: 90%;
+        }
+    }
+    .cs {
+        margin: 15px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .cs1 {
+        width: auto;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cs2 {
+        display: grid;
+        grid-template-rows: auto auto;
+        width: 100px;
+    }
+    .csfont {
+        font-size: medium;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        font-style: oblique;
+        color: crimson;
+    }
+    .csline {
+        margin-top: 4px;
+        width: 95%;
+        height: 4px;
+        animation: linemovecss 3s 1;
+        background-color: crimson;
+        border: 2px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: black;
+    }
+    @keyframes linemovecss {
+        0% {
+            width: 20%;
+        }
+        50% {
+            width: 50%;
+        }
+        100% {
+            width: 95%;
+        }
+    }
+    .js {
+        margin: 15px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .js1 {
+        width: auto;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .js2 {
+        display: grid;
+        grid-template-rows: auto auto;
+        width: 100px;
+    }
+    .jsfont {
+        font-size: medium;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        font-style: oblique;
+        color: crimson;
+    }
+    .jsline {
+        margin-top: 4px;
+        width: 75%;
+        height: 4px;
+        animation: linemovejs 3s 1;
+        background-color: crimson;
+        border: 2px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: black;
+    }
+    @keyframes linemovejs {
+        0% {
+            width: 20%;
+        }
+        50% {
+            width: 50%;
+        }
+        100% {
+            width: 75%;
+        }
+    }
+    .a {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        background-color: crimson;
+        width: auto;
+        height: 40px;
+        text-decoration: none;
+        padding: 3px;
+        border-radius: 50px;
+    }
+    .tele {
+        color: black;
+        font-size: large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 700;
+    }
+    a:active,
+    a:focus,
+    a:hover,
+    a::content {
+        border-color: black;
+        color: black;
+        background-color: black;
+    }
+    .page3 {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 50px;
+        width: 500px;
+        display: grid;
+    }
+    .photome {
+        margin-left: auto;
+        margin-right: auto;
+        height: 200px;
+        border-radius: 20px;
+        animation: changebord 1s infinite cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    }
+    .tools {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .icon {
+        border-radius: 100px;
+        height: 40px;
+        animation: changebord 1s infinite cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    }
+}
